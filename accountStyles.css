@@ -1,0 +1,16 @@
+.foot
+{
+    background-color: black;
+    bottom: 0;
+}
+.black-info
+{
+    max-height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.total
+{
+    height: 100vh;
+}

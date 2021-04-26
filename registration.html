@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="RegistrationStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">ABC Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav r-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="registration.html">Registration</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+   
+        <div class="container-fluid total">
+          <div class="row h-100">
+           
+            <div class="col black-info d-flex align-items-center justify-content-center">
+       
+                <span class="display-4 pb-2">Customer Registration</span>
+            
+                
+            </div>
+           
+            <div class="col-sm-6 h-100 w-100 backcol tot-col d-flex align-items-center justify-content-center">
+              <div class="form-div">
+                <h2>Sign Up</h2>
+              <form id="myForm" onsubmit="validator();return false" >
+                <div class="form-group">
+                   <label>Email Id</label>
+                   <input type="email" id="email" class="form-control"  placeholder="Email Id"  name="email">
+                   <small id="email-error" class="text-danger" ></small>
+                </div>
+                <div class="form-group"> 
+                   <label>Password</label>
+                   <input type="password" id="password1" class="form-control" placeholder="Password ">
+                   <small id="password1-error" class="text-danger"></small>
+                </div>
+                <div class="form-group"> 
+                    <label> Confirm Password</label>
+                    <input type="password" id="password2" class="form-control" placeholder="Confirm Password ">
+                    <small id="password2-error" class="text-danger" ></small>
+                 </div>
+                 <div class="form-group"> 
+                  <label>Mobile Number</label>
+                  <input type="text" id="mobileNumber" class="form-control" placeholder="Mobile Number ">
+                  <small id="mobileNo-error" class="text-danger"></small><br>
+                  <small>(Note : Password Should Have Atleast One Number And Minimum 5 Characters) </small><br>
+                  <br>
+
+               </div>
+                <div class="row">
+                  <div class="col pr-0">
+                <button type="submit" class="btn btn-black text-light" >Register</button>
+                  </div> 
+                </div>
+              </form>
+              
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <footer class="foot text-light d-flex justify-content-center align-items-center">
+            <span>© THUNDERX | Thank You For Visiting!!</span>
+        </footer>
+     
+</body>
+<script src="registerApp.js"></script>
+</html>
